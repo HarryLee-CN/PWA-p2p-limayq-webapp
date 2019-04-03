@@ -1,13 +1,14 @@
 <template>
   <div id="app">
-    <transition name="fade" mode="out-in">
-      <keep-alive>
-        <router-view v-if="$route.meta.keep"></router-view>
-      </keep-alive>
-    </transition>
-    <transition name="fade" mode="out-in">
-      <router-view v-if="!$route.meta.keep"></router-view>
-    </transition>
+    <router-view></router-view>
+    <!--<transition name="fade" mode="out-in">-->
+      <!--<keep-alive>-->
+        <!--<router-view v-if="$route.meta.keep"></router-view>-->
+      <!--</keep-alive>-->
+    <!--</transition>-->
+    <!--<transition name="fade" mode="out-in">-->
+      <!--<router-view v-if="!$route.meta.keep"></router-view>-->
+    <!--</transition>-->
   </div>
 </template>
 
