@@ -58,7 +58,7 @@
   export default {
     data() {
       return {
-        banner_title: '富卡',
+        banner_title: '立马有钱',
 
         banner_text: '智能信贷金融专家',
         center: [

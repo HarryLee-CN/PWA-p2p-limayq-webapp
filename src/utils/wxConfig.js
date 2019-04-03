@@ -62,7 +62,7 @@ export function wxShare(params = {
   title: '超快审批，超低利息，超速到账！还不快来贷？！',
   link: 'https://app.limayq.com/wxLoginMiddlePage', // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
   imgUrl: 'http://bucket-fuyin-limayq-beijing.oss-cn-beijing.aliyuncs.com/favicon.png', // 分享图标
-  desc: '富卡 - 让金融触手可及，为普惠金融贡献力量', // 分享描述
+  desc: '立马有钱 - 让金融触手可及，为普惠金融贡献力量', // 分享描述
   type: 'link', // 分享类型,music、video或link，不填默认为link
   dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
 }) {

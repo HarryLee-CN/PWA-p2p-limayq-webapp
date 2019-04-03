@@ -6,7 +6,7 @@
     </div>
 
     <div class="welcome">
-      <span>欢迎您来到富卡</span>
+      <span>欢迎您来到立马有钱</span>
     </div>
 
     <div class="phoneNum">

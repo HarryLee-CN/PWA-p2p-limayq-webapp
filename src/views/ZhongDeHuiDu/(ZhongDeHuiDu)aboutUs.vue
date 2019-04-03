@@ -5,7 +5,7 @@
     <span class="copyright_part2">@Copyright @2018 All Rights Reserved</span>
     <div class="text">
       <p class="paragraph" style="text-indent: 2em">
-        富卡是中德汇都旗下的为用户打造的一个极速金融借贷平台，用户可以在这里快速申请借款，放款快捷，为用户轻松解决资金问题。
+        立马有钱是中德汇都旗下的为用户打造的一个极速金融借贷平台，用户可以在这里快速申请借款，放款快捷，为用户轻松解决资金问题。
       </p>
     </div>
     <div class="title">

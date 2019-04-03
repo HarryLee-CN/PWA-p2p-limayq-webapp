@@ -70,7 +70,7 @@
       </div>
 
       <div class="footer" style="padding-bottom: calc(1.38rem + env(safe-area-inset-bottom));">
-        <span>富卡承诺不向在校大学生借款</span>
+        <span>立马有钱承诺不向在校大学生借款</span>
       </div>
 
     </mt-loadmore>

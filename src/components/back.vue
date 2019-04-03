@@ -15,7 +15,7 @@
     props: {
       title: {
         type: String,
-        default: '富卡 - 智能信贷金融专家'
+        default: '立马有钱 - 智能信贷金融专家'
       }
     },
     data() {

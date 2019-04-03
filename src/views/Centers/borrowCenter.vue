@@ -140,7 +140,7 @@
     <div class="bottom">
       <div class="protocol">
         <img src="../../assets/img/borrowCenter/checked@2x.png"/>
-        <span>我已阅读及同意<span>《富卡借款协议》</span></span>
+        <span>我已阅读及同意<span>《立马有钱借款协议》</span></span>
       </div>
       <div class="getLoanButton"><span>立马拿钱</span></div>
     </div>

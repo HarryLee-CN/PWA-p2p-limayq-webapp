@@ -33,7 +33,7 @@
             : this.$route.params.name === 'borrowRaiders' ? '借款攻略'
             : this.$route.params.name === 'ad_20180105_ALetter' ? '致用户的一封信'
             : this.$route.params.name === 'ad_20180206_HolidayAnnouncement' ? '春节放假公告'
-            : '富卡';
+            : '立马有钱';
       }
     },
     components: {
