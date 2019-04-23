@@ -462,7 +462,7 @@
       }
 
       .Ads {
-        width: 92vw;
+        width: 6.9rem;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
