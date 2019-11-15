@@ -99,8 +99,8 @@ const webpackConfig = merge(baseWebpackConfig, {
     ]),
     // 把指定文件夹下的文件复制到指定的目录
     new TransferWebpackPlugin([
-      {from: '../extra'}
-    ], path.resolve(__dirname,"../docs"))
+      {from: '../public'}
+    ], path.resolve(__dirname,"../dist"))
   ]
 })
 
