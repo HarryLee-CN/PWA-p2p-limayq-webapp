@@ -21,44 +21,6 @@
     },
     mounted() {
       wxShare();
-      let startY = 0;
-      const scrollBox = document.querySelector('#app');
-
-      document.body.addEventListener('touchstart', (e) => {
-        startY = e.touches[0].pageY;
-      }, { passive: false });
-
-      document.body.addEventListener('touchmove', (e) => {
-        const moveY = e.touches[0].pageY;
-        const top = scrollBox.scrollTop;
-        const ch = scrollBox.clientHeight;
-        const sh = scrollBox.scrollHeight;
-        if (!isChildOf(e.target, scrollBox)) {
-          e.preventDefault();
-        } else if ((top === 0 && moveY > startY) || (top + ch === sh && moveY < startY)) {
-          e.preventDefault();
-        }
-      }, { passive: false });
-
-      function isChildOf(child, parent, justChild = false) {
-        // justChild为true则只判断是否为子元素，若为false则判断是否为本身或者子元素 默认为false
-        let parentNode;
-        if (justChild) {
-          parentNode = child.parentNode;
-        } else {
-          parentNode = child;
-        }
-
-        if (child && parent) {
-          while (parentNode) {
-            if (parent === parentNode) {
-              return true;
-            }
-            parentNode = parentNode.parentNode;
-          }
-        }
-        return false;
-      }
     }
   }
 </script>
