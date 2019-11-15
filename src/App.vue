@@ -1,5 +1,5 @@
 <template>
-  <div id="app" style="overflow: hidden;">
+  <div id="app">
     <transition name="fade" mode="out-in">
       <keep-alive>
         <router-view v-if="$route.meta.keep"></router-view>
