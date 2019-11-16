@@ -602,7 +602,7 @@
       flex-direction: column;
       align-items: center;
       bottom: 0.5rem;
-      background: rgba(255,255,255,0.8);
+      background: rgba(255,255,255,0.9);
       border-radius: 0.1rem;
       .close {
         position: absolute;
@@ -626,7 +626,7 @@
           width: 1.2rem;
           height: 1.2rem;
           border-radius: 50%;
-          background-color: rgba(255,255,255,0.9);
+          background-color: rgba(255,255,255,0.6);
           display: flex;
           justify-content: center;
           align-items: center;

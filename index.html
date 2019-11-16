@@ -13,25 +13,14 @@
     <meta name="description" content="A sample p2p app">
     <script src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
     <meta name="theme-color" content="#ffffff" />
-    <style>
-      #butInstall {
-        width: 0.48rem;
-        height: 0.48rem;
-        background: url("/public/images/install.svg") center center no-repeat;
-        background-size: contain;
-        position: absolute;
-        top: 0.2rem;
-        right: 0.2rem;
-        z-index: 10;
-        cursor: pointer;
-      }
-    </style>
+    <link rel="stylesheet" href="/assets/style.css">
   </head>
   <body>
-
-    <button id="butInstall" aria-label="Install" hidden></button>
+    <button id="butInstall" class="animated pulse" aria-label="Install" hidden></button>
     <div id="app">
-      loading...
+      <div class="pre-content">
+        <img src="/images/loading.gif" height="100" width="100"/>
+      </div>
     </div>
     <!-- built files will be auto injected -->
     <!-- CODELAB: Add the install script here -->
