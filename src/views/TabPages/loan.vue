@@ -86,6 +86,50 @@
         <img class="btn_img" src="../../assets/img/loan/btn_image@2x.png" @click="getLoan()"/>
       </div>
     </mt-popup>
+
+    <mt-popup
+      class="addToIndexPopup"
+      v-model="popupVisible"
+      position="bottom"
+      :modal="true">
+      <div class="title">
+        加入主画面后跟使用 app 体验一模一样
+      </div>
+      <div class="content">
+        <div class="circle">
+          <div>
+            <img src="../../assets/img/loan/share.png" class="icon"/>
+          </div>
+        </div>
+        <span>
+          >
+        </span>
+        <div class="circle">
+          <div>
+            <img src="../../assets/img/loan/plus-square.png" class="icon"/>
+          </div>
+        </div>
+        <span>
+          >
+        </span>
+        <div class="circle">
+          <div>
+            <img src="../../assets/img/favicon.png" class="icon"/>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <span>
+          点击
+        </span>
+        <span>
+          添加到主屏幕
+        </span>
+        <span>
+          新增入口
+        </span>
+      </div>
+    </mt-popup>
   </div>
 </template>
 <script>
@@ -146,7 +190,9 @@
 
         barVisible: false,
 
-        topStatus: ''
+        topStatus: '',
+
+        popupVisible: true
       }
     },
     methods: {
@@ -541,6 +587,65 @@
 
           transition: all .2s ease;
           transform-origin: bottom;
+        }
+      }
+    }
+
+    .addToIndexPopup {
+      width: 80%;
+      height: 3rem;
+      box-shadow: 0 0.03rem 0.12rem 0 #d0d9e2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      bottom: 0.5rem;
+      background: rgba(255,255,255,0.8);
+      border-radius: 0.1rem;
+      .title {
+        color: #4089fe;
+        margin-top: 0.24rem;
+        font-size: 0.3rem;
+      }
+      .content {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 0.24rem;
+        .circle {
+          width: 1.2rem;
+          height: 1.2rem;
+          border-radius: 50%;
+          background-color: rgba(255,255,255,0.9);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          div {
+            width: 0.85rem;
+            height: 0.85rem;
+            background-color: white;
+            border-radius: 50%;
+            box-shadow: 0 0 0.12rem 0 #d0d9e2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .icon {
+              width: 0.5rem;
+              height: 0.5rem;
+            }
+          }
+        }
+        span {
+          padding-top: 0.45rem;
+        }
+      }
+      .bottom {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 0.24rem;
+        span {
+          width: 1.2rem;
+          text-align: center;
         }
       }
     }

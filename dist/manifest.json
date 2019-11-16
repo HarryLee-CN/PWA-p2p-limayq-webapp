@@ -1,6 +1,6 @@
 {
-  "name": "立马有钱PWA版",
-  "short_name": "立马有钱PWA版",
+  "name": "立马有钱",
+  "short_name": "立马有钱",
   "icons": [{
     "src": "/images/favicon128.png",
     "sizes": "128x128",
