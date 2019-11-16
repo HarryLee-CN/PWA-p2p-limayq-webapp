@@ -92,6 +92,9 @@
       v-model="popupVisible"
       position="bottom"
       :modal="true">
+      <img @click="() => {
+        this.popupVisible = false
+      }" class="close" src="../../assets/img/login/close.png"/>
       <div class="title">
         加入主画面后跟使用 app 体验一模一样
       </div>
@@ -592,7 +595,7 @@
     }
 
     .addToIndexPopup {
-      width: 80%;
+      width: 90%;
       height: 3rem;
       box-shadow: 0 0.03rem 0.12rem 0 #d0d9e2;
       display: flex;
@@ -601,10 +604,18 @@
       bottom: 0.5rem;
       background: rgba(255,255,255,0.8);
       border-radius: 0.1rem;
+      .close {
+        position: absolute;
+        height: 0.25rem;
+        width: 0.25rem;
+        right: 0.18rem;
+        top: 0.26rem;
+      }
       .title {
         color: #4089fe;
         margin-top: 0.24rem;
         font-size: 0.3rem;
+        font-weight: bold;
       }
       .content {
         width: 80%;
