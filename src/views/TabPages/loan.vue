@@ -244,6 +244,30 @@
             imgUrl: require('../../assets/img/advertise/20180105/aletter_banner.png'),
             link: '/H5/ad_20180105_ALetter',
           },
+          {
+            imgUrl: require('../../assets/img/advertise/20171229/InviteFriends_bg@2x.jpg'),
+            link: '/H5/ad_20180206_HolidayAnnouncement',
+          },
+          {
+            imgUrl: require('../../assets/img/advertise/20171229/NewbiesWelfare_bg@2x.jpg'),
+            link: '/H5/ad_20180206_HolidayAnnouncement',
+          },
+          {
+            imgUrl: require('../../assets/img/advertise/20180206/放假公告@2x.jpg'),
+            link: '/H5/ad_20180206_HolidayAnnouncement',
+          },
+          {
+            imgUrl: require('../../assets/img/advertise/20180105/aletter_banner.png'),
+            link: '/H5/ad_20180105_ALetter',
+          },
+          {
+            imgUrl: require('../../assets/img/advertise/20171229/InviteFriends_bg@2x.jpg'),
+            link: '/H5/ad_20180206_HolidayAnnouncement',
+          },
+          {
+            imgUrl: require('../../assets/img/advertise/20171229/NewbiesWelfare_bg@2x.jpg'),
+            link: '/H5/ad_20180206_HolidayAnnouncement',
+          },
         ];
 
         /**数字跳动**/
@@ -471,8 +495,8 @@
 
         .each_Ad {
           width: 6.9rem;
-          object-position: center center;
-          object-fit: contain;
+          object-position: top center;
+          object-fit: cover;
           height: 2.9rem;
           margin-bottom: 0.2rem;
         }
