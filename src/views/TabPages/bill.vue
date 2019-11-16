@@ -156,7 +156,7 @@
     </mt-loadmore>
 
     <!--/**loginpop**/-->
-    <mt-popup class="loginModal" style="margin-bottom: calc(0.98rem + env(safe-area-inset-bottom));" :modal="true" :closeOnClickModal="false" :value="!isLogin" position="bottom">
+    <mt-popup class="loginModal" style="margin-bottom: calc(0.98rem + env(safe-area-inset-bottom));" :modal="false" :closeOnClickModal="false" :value="!isLogin" position="bottom">
       <img class="icon_loginpop" src="../../assets/img/bill/zd_icon_loginpop.png"/>
       <img class="word_loginpop" src="../../assets/img/bill/zd_word_loginpop.png"/>
       <img @click="toLogin" class="button_loginpop" src="../../assets/img/bill/zd_button_loginpop.png"/>
@@ -564,7 +564,8 @@
       height: 3.53rem;
       margin-bottom: 0.98rem;
       border-top-left-radius: 0.2rem;
-      border-top-right-radius: 0.2rem;
+      border-top-right-radius: 0.2rem;;
+      box-shadow: 0 -0.1rem 0.12rem 0 #d0d9e2;
 
       display: flex;
       flex-direction: column;
@@ -574,6 +575,8 @@
         width: 2.09rem;
         height: 1.96rem;
         margin-top: -1.02rem;
+        border-radius: 50%;
+        box-shadow: 0 -0.1rem 0.12rem 0 #d0d9e2;
       }
 
       .word_loginpop {
