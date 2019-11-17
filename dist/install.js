@@ -17,29 +17,6 @@
  */
 'use strict';
 
-let deferredInstallPrompt = null;
-const installButton = document.getElementById('butInstall');
-installButton.addEventListener('click', installPWA);
-
-// CODELAB: Add event listener for beforeinstallprompt event
-/**如果符合添加到主屏幕的条件，Chrome将触发一个beforeinstallprompt事件，您可以使用该事件指示您的应用可以“安装”，然后提示用户安装该应用。添加以下代码以监听beforeinstallprompt事件：**/
-window.addEventListener('beforeinstallprompt', saveBeforeInstallPromptEvent);
-
-/**
- * Event handler for beforeinstallprompt event.
- *   Saves the event & shows install button.
- *
- * @param {Event} evt
- */
-function saveBeforeInstallPromptEvent(evt) {
-  // CODELAB: Add code to save event & show the install button.
-  /**保存事件并显示安装按钮
-   在我们的saveBeforeInstallPromptEvent函数中，我们将保存对beforeinstallprompt事件的引用，以便prompt()以后可以调用它并更新UI以显示安装按钮。**/
-  deferredInstallPrompt = evt;
-  installButton.removeAttribute('hidden');
-}
-
-
 /**
  * Event handler for butInstall - Does the PWA installation.
  *
@@ -66,10 +43,19 @@ function installPWA(evt) {
     });
 }
 
-// CODELAB: Add event listener for appinstalled event
-//记录所有安装事件
-// 除了您添加的用于安装应用的用户界面以外，用户还可以通过其他方法（例如Chrome的三点菜单）安装PWA。要跟踪这些事件，请监听appinstalled事件。
-window.addEventListener('appinstalled', logAppInstalled);
+/**
+ * Event handler for beforeinstallprompt event.
+ *   Saves the event & shows install button.
+ *
+ * @param {Event} evt
+ */
+function saveBeforeInstallPromptEvent(evt) {
+  // CODELAB: Add code to save event & show the install button.
+  /**保存事件并显示安装按钮
+   在我们的saveBeforeInstallPromptEvent函数中，我们将保存对beforeinstallprompt事件的引用，以便prompt()以后可以调用它并更新UI以显示安装按钮。**/
+  deferredInstallPrompt = evt;
+  installButton.removeAttribute('hidden');
+}
 
 /**
  * Event handler for appinstalled event.
@@ -81,3 +67,16 @@ function logAppInstalled(evt) {
   // CODELAB: Add code to log the event
   console.log('Weather App was installed.', evt);
 }
+
+let deferredInstallPrompt = null;
+const installButton = document.getElementById('butInstall');
+installButton.addEventListener('click', installPWA);
+
+// CODELAB: Add event listener for beforeinstallprompt event
+/**如果符合添加到主屏幕的条件，Chrome将触发一个beforeinstallprompt事件，您可以使用该事件指示您的应用可以“安装”，然后提示用户安装该应用。添加以下代码以监听beforeinstallprompt事件：**/
+window.addEventListener('beforeinstallprompt', saveBeforeInstallPromptEvent);
+
+// CODELAB: Add event listener for appinstalled event
+//记录所有安装事件
+// 除了您添加的用于安装应用的用户界面以外，用户还可以通过其他方法（例如Chrome的三点菜单）安装PWA。要跟踪这些事件，请监听appinstalled事件。
+window.addEventListener('appinstalled', logAppInstalled);

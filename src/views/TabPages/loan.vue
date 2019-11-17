@@ -195,10 +195,19 @@
 
         topStatus: '',
 
-        popupVisible: true
+        popupVisible: false
       }
     },
     methods: {
+      /**判断APP是否加载过一次(ios)**/
+      checkAppLunched() {
+        if (JSON.parse(localStorage.getItem('AppLunchedOnce'))) {
+          this.popupVisible = false
+        } else {
+          localStorage.setItem('AppLunchedOnce', JSON.stringify(true))
+          this.popupVisible = true;
+        }
+      },
       /**顶部弹窗**/
       handleScroll() {
         let scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
@@ -388,6 +397,7 @@
       wxUserInfo(this.$route.query.code)
     },
     mounted() {
+      this.checkAppLunched();
       this.getIndexData();
       window.addEventListener('scroll', this.handleScroll);
       clickAnim('btn_lmnq');
