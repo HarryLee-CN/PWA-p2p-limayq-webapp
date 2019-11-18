@@ -129,7 +129,7 @@
           添加到主屏幕
         </span>
         <span>
-          新增入口
+          立马有钱
         </span>
       </div>
     </mt-popup>

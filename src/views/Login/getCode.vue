@@ -46,7 +46,7 @@
     methods: {
       /**转到账号密码登录**/
       toPwdLogin(){
-        this.$router.push({
+        this.$router.replace({
           name: 'passwordLogin',
           query:{
             phoneNum:this.phoneNum
@@ -198,7 +198,7 @@
 
   .line{
     width: 92%;
-    height: 0.01rem;
+    height: 0.02rem;
     margin-top: 0.45rem;
     background-color: #c9d3e0;
   }
