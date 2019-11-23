@@ -48,7 +48,7 @@ function wxConfig(readyFunction) {
       });
       wx.ready(readyFunction);
       wx.error(function (e) {
-        console.log(e)
+        console.log('wx.error', e)
       });
     } else {
       console.log(res.body.resultMessage);
