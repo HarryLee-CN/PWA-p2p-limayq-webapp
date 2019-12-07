@@ -394,7 +394,7 @@
     },
 
     created() {
-      wxUserInfo(this.$route.query.code)
+      // wxUserInfo(this.$route.query.code)
     },
     mounted() {
       this.checkAppLunched();
